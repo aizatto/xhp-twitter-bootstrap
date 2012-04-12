@@ -6,7 +6,7 @@ class :twitter:navbar extends :ui:base {
     :div,
     bool fixedtop = false;
 
-  children (:twitter:navbar:brand?, :ul?);
+  children (:twitter:navbar:brand?, :twitter:navbar:nav?);
 
   public function render() {
     $brand = $this->getChildren('twitter:navbar:brand');

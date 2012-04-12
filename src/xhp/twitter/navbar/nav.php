@@ -6,7 +6,7 @@ class :twitter:navbar:nav extends :x:element {
     return
       <div class="nav-collapse">
         <ul class="nav">
-          {$list}
+          {$this->getChildren()}
         </ul>
       </div>;
   }
